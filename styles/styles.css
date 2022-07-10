@@ -1,0 +1,283 @@
+:root {
+
+    /* fonts */
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: ;
+
+    /* text colors */
+    --main-txt-cl: #8f95a5;
+    --acent-txt-cl: #263238;
+    --titel-cl: #000000;
+
+    /* bg colors */
+    --light-bg-cl: #ffffff;
+    --dark-bg-cl: #f5f5f5;
+}
+
+/* Reset Start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Reset End */
+
+body {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+}
+
+/* Base styles */
+
+.container {
+    width: 1378px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 1px solid tomato;
+}
+
+.section {
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.btn {
+    width: 218px;
+    height: 60px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: var(--light-bg-cl);
+    background-color: var(--acent-txt-cl);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--titel-cl);
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-right: 236px;
+
+    font-size: 36px;
+    line-height: calc(54 / 36);
+    color: var(--main-txt-cl);
+}
+
+.acent {
+    color: var(--titel-cl);
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link {
+    display: block;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: var(--acent-txt-cl);
+    cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--main-txt-cl);
+}
+
+.nav-link-current {
+    color: var(--main-txt-cl);
+}
+
+.nav-btn {
+    max-width: 350px;
+    min-width: 312px;
+    min-height: 70px;
+    padding: 19px 55px;
+
+    font-family: inherit;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    letter-spacing: 0.03em;
+    color: var(--titel-cl);
+    background-color: var(--light-bg-cl);
+    cursor: pointer;
+    border: 2px solid #263238;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background-color: var(--dark-bg-cl);
+}
+
+/* Section Hero */
+
+.hero-titel {
+    font-size: 64px;
+    line-height: calc(80 / 64);
+    color: var(--titel-cl);
+}
+
+.hiro-titel-wrap {
+    display: flex;
+}
+
+.hero-wrraper {
+    display: flex;
+    flex-basis: 540px;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.hero-text {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+}
+
+.hero-btn {
+    width: 426px;
+    height: 100px;
+}
+
+/* Section Skills */
+
+.skills-titel {
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    color: var(--titel-cl);
+}
+
+.skills-subtitel {
+    font-size: 30px;
+    line-height: calc(45 / 30);
+    color: var(--acent-txt-cl);
+}
+
+.skill-text {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
+
+/* Section About */
+
+.about-titel {
+    font-size: 48px;
+    line-height: calc(72 / 48) 72px;
+    color: var(--titel-cl);
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: calc(36 / 20);
+}
+
+/* Section Pricing */
+
+.pricing-titel {
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    color: var(--titel-cl);
+}
+
+.pricing-subtitel {
+    font-size: 30px;
+    line-height: calc(48 / 30);
+    text-transform: capitalize;
+    color: var(--acent-txt-cl);
+}
+
+.price-text {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+}
+
+/* Section Contact */
+
+.contact-titel {
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    color: var(--titel-cl);
+}
+
+.contact-text {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+}
+
+.imale {
+    width: 425px;
+    height: 70px;
+    border: 1px solid #8f95a5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--main-txt-cl);
+}
+
+.contact-btn {
+    width: 312px;
+    height: 70px;
+}
+
+/* Footer section */
+
+.footer-link {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    letter-spacing: 0.02em;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--acent-txt-cl);
+}
